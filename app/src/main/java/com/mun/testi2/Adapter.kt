@@ -27,21 +27,13 @@ class Adapter(private val context5: Context,
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var click = true
         val data = list5[position]
-        holder.titleTV6000.text = data.title
+        holder.titleTV600.text = data.title
         holder.button60000.setOnClickListener(View.OnClickListener {
-            when {
-                click == true -> {
-                    holder.button60000.setBackgroundColor(Color.rgb(185, 140, 244))
-                    click = false
-                }
-
-                else -> {
-                    holder.button60000.setBackgroundColor(Color.rgb(88, 17, 185))
-                    click = true
-                }
-            }
+            (list5.size != 0)
+            list5.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemRangeChanged(position, list5.size)
         })
     }
 }
