@@ -294,7 +294,7 @@ class MainActivity : AppCompatActivity() {
 
         val button26: Button = findViewById(R.id.button26)
         button26.setOnClickListener {
-            Intent(this, MainActivity5000::class.java).also {
+            Intent(this, MainActivity4::class.java).also {
                 var t = 1
                 for (value in ruokalajit) {
                     it.putExtra("e${t++}", value)

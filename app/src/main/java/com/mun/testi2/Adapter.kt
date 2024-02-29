@@ -13,7 +13,7 @@ class Adapter(private val context5: Context,
                private val list5: ArrayList<Model3>) : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val titleTV6000: TextView = view.findViewById(R.id.button2000)
+        val titleTV600: TextView = view.findViewById(R.id.button2000)
         val button60000: Button = view.findViewById(R.id.button2000)
     }
 
