@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity"
+    tools:viewBindingIgnore="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical"
+        tools:context=".MainActivity"
+        tools:viewBindingIgnore="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kauppalista"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35sp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valitse reseptit:"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Tofuwokki"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Linssicurry"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Palak paneer"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Kikherne tikka masala"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Nakkikastike perunalla"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Mustapapupyörykät pastalla"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Vegepyttipannu"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Quesadillat"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Linssitacot"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Tofutortillat"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Kaurahiutaleet"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Smoothiehedelmät"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Alpro"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Puolukka"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Leipä"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Hummus"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pähkinä"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Vessapaperi"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pyykinpesuaine"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Shampoo"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lisää kauppalistaan omavalintainen kohta:"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17sp"/>
+
+        <EditText
+        android:id="@+id/textbox1"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Kirjoita tähän" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Syötä"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klikkaa lopuksi:"
+        android:layout_gravity="center_horizontal"
+        android:textSize="35sp"/>
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Valmis"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Testiversioita:"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Testi 1"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/lpurple"/>
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Testi 2"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/lpurple"/>
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Testi 3"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/lpurple"/>
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Testi 4"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/lpurple"/>
+
+    </LinearLayout>
+
+</ScrollView>

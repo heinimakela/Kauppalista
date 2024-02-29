@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+            android:id="@+id/yksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Kauppalista"
+            android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/kaksi"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Hevit:"
+            android:textSize="20sp"
+            android:layout_below="@id/yksi"
+
+        />
+
+    <ListView
+        android:id="@+id/lista1"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/kolme"/>
+
+
+    <TextView
+            android:id="@+id/kolme"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Kylmät:"
+            android:textSize="20sp"
+            android:layout_below="@id/lista1"/>
+
+    <ListView
+            android:id="@+id/lista2"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/kolme"/>
+
+    <TextView
+            android:id="@+id/neljä"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Kuivat:"
+            android:textSize="20sp"
+            android:layout_below="@id/lista2"/>
+
+    <ListView
+            android:id="@+id/lista3"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/neljä"/>
+
+    <TextView
+            android:id="@+id/viisi"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Mausteet:"
+            android:textSize="20sp"
+            android:layout_below="@id/lista3"/>
+
+    <ListView
+            android:id="@+id/lista4"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/viisi"/>
+
+    <TextView
+            android:id="@+id/kuusi"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Pakasteet:"
+            android:textSize="20sp"
+            android:layout_below="@id/lista4"/>
+
+    <ListView
+            android:id="@+id/lista5"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/kuusi"/>
+
+    <TextView
+            android:id="@+id/seitsemän"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Muut:"
+            android:textSize="20sp"
+            android:layout_below="@id/lista5"/>
+
+    <ListView
+            android:id="@+id/lista6"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/seitsemän"/>
+
+</LinearLayout>
