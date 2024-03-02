@@ -4,11 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity1 : AppCompatActivity() {
 
     val ruokalajit = mutableListOf<String>()
     val tofuwokki = listOf("porkkana", "paprika", "kesäkurpitsa", "marinoitu tofu", "riisinuudeli")
@@ -124,7 +123,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main1)
 
         val button1: Button = findViewById(R.id.button1)
         button1.setOnClickListener {
@@ -242,7 +241,7 @@ class MainActivity : AppCompatActivity() {
 
         val button22: Button = findViewById(R.id.button22)
         button22.setOnClickListener {
-            Intent(this, MainActivity5000::class.java).also {
+            Intent(this, MainActivity5::class.java).also {
                 var t = 1
                 for (value in ruokalajit) {
                     it.putExtra("e${t++}", value)
@@ -294,7 +293,7 @@ class MainActivity : AppCompatActivity() {
 
         val button26: Button = findViewById(R.id.button26)
         button26.setOnClickListener {
-            Intent(this, MainActivity5000::class.java).also {
+            Intent(this, MainActivity5::class.java).also {
                 var t = 1
                 for (value in ruokalajit) {
                     it.putExtra("e${t++}", value)

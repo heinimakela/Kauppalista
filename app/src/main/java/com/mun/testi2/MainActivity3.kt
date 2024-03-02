@@ -13,9 +13,9 @@ class MainActivity3 : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = Adapter3(this, fetchList())
+        recyclerView.adapter = Adapter1(this, fetchList())
     }
-    private fun fetchList(): ArrayList<Model2> {
+    private fun fetchList(): ArrayList<Model1> {
 
         val hevit = listOf("tomaatti","kurkku","avokado","lime","kesäkurpitsa","paprika","chili",
             "inkivääri","kevätsipuli","babypinaatti","salaatti","banaani","porkkana","sipuli",
@@ -97,10 +97,10 @@ class MainActivity3 : AppCompatActivity() {
             }
         }
 
-        val list = arrayListOf<Model2>()
+        val list = arrayListOf<Model1>()
 
         for ((k,v) in aineet2) {
-            val model = Model2(
+            val model = Model1(
                 com.google.android.material.R.drawable.abc_btn_check_material,
                 "$k",
                 "$v"

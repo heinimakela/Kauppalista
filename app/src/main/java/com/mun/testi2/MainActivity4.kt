@@ -8,14 +8,14 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main4)
+        setContentView(R.layout.activity_main3)
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = Adapter2(this, fetchList())
     }
-    private fun fetchList(): ArrayList<Model> {
+    private fun fetchList(): ArrayList<Model2> {
 
         val hevit = listOf("tomaatti","kurkku","avokado","lime","kesäkurpitsa","paprika","chili",
             "inkivääri","kevätsipuli","babypinaatti","salaatti","banaani","porkkana","sipuli",
@@ -97,10 +97,10 @@ class MainActivity4 : AppCompatActivity() {
             }
         }
 
-        val list = arrayListOf<Model>()
+        val list = arrayListOf<Model2>()
 
         for ((k,v) in aineet2) {
-            val model = Model(
+            val model = Model2(
                 "$k"
             )
             list.add(model)

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
-    tools:context=".MainActivity"
+    tools:context=".MainActivity1"
     tools:viewBindingIgnore="true"
     >
 
@@ -16,7 +16,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="fill_vertical"
-        tools:context=".MainActivity"
+        tools:context=".MainActivity1"
         tools:viewBindingIgnore="true" >
 
         <TextView

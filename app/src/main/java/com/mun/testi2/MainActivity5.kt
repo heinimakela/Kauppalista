@@ -5,17 +5,17 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity5000 : AppCompatActivity() {
+class MainActivity5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main51)
+        setContentView(R.layout.activity_main3)
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = Adapter(this, fetchList())
+        recyclerView.adapter = Adapter3(this, fetchList())
     }
-    private fun fetchList(): ArrayList<Model3> {
+    private fun fetchList(): ArrayList<Model2> {
 
         val hevit = listOf("tomaatti","kurkku","avokado","lime","kesäkurpitsa","paprika","chili",
             "inkivääri","kevätsipuli","babypinaatti","salaatti","banaani","porkkana","sipuli",
@@ -97,10 +97,10 @@ class MainActivity5000 : AppCompatActivity() {
             }
         }
 
-        val list = arrayListOf<Model3>()
+        val list = arrayListOf<Model2>()
 
         for ((k,v) in aineet2) {
-            val model = Model3(
+            val model = Model2(
                 "$k"
             )
             list.add(model)
