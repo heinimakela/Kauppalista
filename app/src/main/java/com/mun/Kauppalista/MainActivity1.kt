@@ -108,18 +108,6 @@ class MainActivity1 : AppCompatActivity() {
         "taco salsa"
     )
 
-    val smoothie = listOf("alpro", "smoothiesekoitus", "puolukka")
-    val kaurahiutale = listOf("kaurahiutale")
-    val leipa = listOf("leipä")
-    val pahkina = listOf("pähkinä")
-    val vessapaperi = listOf("vessapaperi")
-    val pyykinpesuaine = listOf("pyykinpesuaine")
-    val shampoo = listOf("shampoo")
-    val smoothiehedelmät = listOf("smoothiehedelmät")
-    val alpro = listOf("alpro")
-    val puolukka = listOf("puolukka")
-    val hummus = listOf("hummus")
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main1)
@@ -176,53 +164,53 @@ class MainActivity1 : AppCompatActivity() {
         }
         val button11: Button = findViewById(R.id.button11)
         button11.setOnClickListener {
-            ruokalajit.addAll(kaurahiutale)
+            ruokalajit.add("kaurahiutale")
             Toast.makeText(this, "Kaurahiutale valittu", Toast.LENGTH_SHORT).show()
         }
         val button12: Button = findViewById(R.id.button12)
         button12.setOnClickListener {
-            ruokalajit.addAll(smoothiehedelmät)
+            ruokalajit.add("smoothiehedelmät")
             Toast.makeText(this, "Smoothiehedelmät valittu", Toast.LENGTH_SHORT).show()
         }
         val button13: Button = findViewById(R.id.button13)
         button13.setOnClickListener {
-            ruokalajit.addAll(alpro)
+            ruokalajit.add("alpro")
             Toast.makeText(this, "Alpro valittu", Toast.LENGTH_SHORT).show()
         }
         val button14: Button = findViewById(R.id.button14)
         button14.setOnClickListener {
-            ruokalajit.addAll(puolukka)
+            ruokalajit.add("puolukka")
             Toast.makeText(this, "Puolukkka valittu", Toast.LENGTH_SHORT).show()
         }
         val button15: Button = findViewById(R.id.button15)
         button15.setOnClickListener {
-            ruokalajit.addAll(leipa)
+            ruokalajit.add("leipä")
             Toast.makeText(this, "Leipä valittu", Toast.LENGTH_SHORT).show()
         }
         val button16: Button = findViewById(R.id.button16)
         button16.setOnClickListener {
-            ruokalajit.addAll(hummus)
+            ruokalajit.add("hummus")
             Toast.makeText(this, "Hummus valittu", Toast.LENGTH_SHORT).show()
         }
         val button17: Button = findViewById(R.id.button17)
         button17.setOnClickListener {
-            ruokalajit.addAll(pahkina)
+            ruokalajit.add("pähkinä")
             Toast.makeText(this, "Pähkinä valittu", Toast.LENGTH_SHORT).show()
         }
         val button18: Button = findViewById(R.id.button18)
         button18.setOnClickListener {
-            ruokalajit.addAll(vessapaperi)
+            ruokalajit.add("vessapaperi")
             Toast.makeText(this, "Vessapaperi valittu", Toast.LENGTH_SHORT).show()
         }
 
         val button19: Button = findViewById(R.id.button19)
         button19.setOnClickListener {
-            ruokalajit.addAll(pyykinpesuaine)
+            ruokalajit.add("pyykinpesuaine")
             Toast.makeText(this, "Pyykinpesuaine valittu", Toast.LENGTH_SHORT).show()
         }
         val button20: Button = findViewById(R.id.button20)
         button20.setOnClickListener {
-            ruokalajit.addAll(shampoo)
+            ruokalajit.add("shampoo")
             Toast.makeText(this, "Shampoo valittu", Toast.LENGTH_SHORT).show()
         }
 
