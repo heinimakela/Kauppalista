@@ -1,11 +1,11 @@
-package com.mun.testi2
+package com.mun.Kauppalista
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity3 : AppCompatActivity() {
+class MainActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
@@ -13,9 +13,9 @@ class MainActivity3 : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = Adapter1(this, fetchList())
+        recyclerView.adapter = Adapter2(this, fetchList())
     }
-    private fun fetchList(): ArrayList<Model1> {
+    private fun fetchList(): ArrayList<Model2> {
 
         val hevit = listOf("tomaatti","kurkku","avokado","lime","kesäkurpitsa","paprika","chili",
             "inkivääri","kevätsipuli","babypinaatti","salaatti","banaani","porkkana","sipuli",
@@ -31,7 +31,7 @@ class MainActivity3 : AppCompatActivity() {
             "riisinuudeli","pasta","rypsiöljy","oliiviöljy","vehnäjauho")
         val mausteet = listOf("chilijauhe","curry","garam masala","juustokumina","kasvisliemikuutio","korianteri",
             "kurkuma","mustapippuri","oregano","savupaprika","sipulijauhe","soijakastike",
-            "suola","timjami","paprikamauste",
+                        "suola","timjami","paprikamauste",
             "valkosipulijauhe")
         val pakasteet = listOf("pakastepinaatti","smoothiesekoitus","puolukka","mustikka")
 
@@ -97,13 +97,11 @@ class MainActivity3 : AppCompatActivity() {
             }
         }
 
-        val list = arrayListOf<Model1>()
+        val list = arrayListOf<Model2>()
 
         for ((k,v) in aineet2) {
-            val model = Model1(
-                com.google.android.material.R.drawable.abc_btn_check_material,
-                "$k",
-                "$v"
+            val model = Model2(
+                "$k"
             )
             list.add(model)
         }

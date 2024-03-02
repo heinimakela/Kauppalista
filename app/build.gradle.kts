@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.mun.testi2"
+    namespace = "com.mun.Kauppalista"
     compileSdk = 34
 
     buildFeatures {
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.mun.testi2"
+        applicationId = "com.mun.Kauppalista"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

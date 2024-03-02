@@ -1,4 +1,4 @@
-package com.mun.testi2
+package com.mun.Kauppalista
 
 import org.junit.Test
 

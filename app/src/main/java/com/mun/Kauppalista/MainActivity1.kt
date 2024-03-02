@@ -1,5 +1,4 @@
-package com.mun.testi2
-
+package com.mun.Kauppalista
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button

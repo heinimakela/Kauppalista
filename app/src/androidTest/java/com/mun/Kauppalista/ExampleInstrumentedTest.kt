@@ -1,4 +1,4 @@
-package com.mun.testi2
+package com.mun.Kauppalista
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

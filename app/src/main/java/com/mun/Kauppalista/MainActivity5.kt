@@ -1,11 +1,11 @@
-package com.mun.testi2
+package com.mun.Kauppalista
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity4 : AppCompatActivity() {
+class MainActivity5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
@@ -13,7 +13,7 @@ class MainActivity4 : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = Adapter2(this, fetchList())
+        recyclerView.adapter = Adapter3(this, fetchList())
     }
     private fun fetchList(): ArrayList<Model2> {
 
@@ -31,7 +31,7 @@ class MainActivity4 : AppCompatActivity() {
             "riisinuudeli","pasta","rypsiöljy","oliiviöljy","vehnäjauho")
         val mausteet = listOf("chilijauhe","curry","garam masala","juustokumina","kasvisliemikuutio","korianteri",
             "kurkuma","mustapippuri","oregano","savupaprika","sipulijauhe","soijakastike",
-                        "suola","timjami","paprikamauste",
+            "suola","timjami","paprikamauste",
             "valkosipulijauhe")
         val pakasteet = listOf("pakastepinaatti","smoothiesekoitus","puolukka","mustikka")
 
