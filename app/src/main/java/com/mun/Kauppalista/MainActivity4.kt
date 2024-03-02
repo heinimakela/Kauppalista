@@ -68,40 +68,14 @@ class MainActivity4 : AppCompatActivity() {
             }
         }
 
-        val muut3 = mutableListOf<String>()
-        val muut4 = mutableListOf<String>()
-        for (i in muut2) {
-            val numero = i.take(2)
-            val numerot = listOf("e1","e2","e3","e4","e5","e6","e7","e8","e9")
-            when {
-                numerot.contains(numero) -> muut3.add(i)
-                else -> muut4.add(i)
-            }
-        }
-
         val aineet = hevit2 + kuivat02 + kylmat2  + kuivat12 + kuivat22 +
-                kuivat32 + mausteet2 + pakasteet2 + muut4
-
-        val aineet2 = mutableMapOf<String, String>()
-        for (aa in aineet){
-            when {
-                hevit.contains(aa) -> aineet2.put(aa,"hevi")
-                kuivat0.contains (aa) -> aineet2.put(aa,"kuiva")
-                kylmat.contains(aa) -> aineet2.put(aa,"kylmä")
-                kuivat1.contains (aa) -> aineet2.put(aa,"kuiva")
-                kuivat2.contains (aa) -> aineet2.put(aa,"kuiva")
-                kuivat3.contains (aa) -> aineet2.put(aa,"kuiva")
-                mausteet.contains(aa) -> aineet2.put(aa,"mauste")
-                pakasteet.contains(aa) -> aineet2.put(aa,"pakaste")
-                else -> aineet2.put(aa,"muu")
-            }
-        }
+                kuivat32 + mausteet2 + pakasteet2 + muut2
 
         val list = arrayListOf<Model2>()
 
-        for ((k,v) in aineet2) {
+        for (i in aineet) {
             val model = Model2(
-                "$k"
+                "$i"
             )
             list.add(model)
         }
