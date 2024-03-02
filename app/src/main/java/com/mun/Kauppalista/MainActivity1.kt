@@ -9,6 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity1 : AppCompatActivity() {
 
     val ruokalajit = mutableListOf<String>()
+    val taytelista = listOf("e1","e2","e3","e4","e5","e6","e7","e8","e9","e10","e11","e12",
+        "e13","e14","e15","e16","e17","e18","e19","e20","e21","e22","e23","e24","e25",
+        "e26","e27","e28","e29","e30","e31","e32","e33","e34","e35","e36","e37","e38",
+        "e39","e40","e41","e42","e43","e44","e45","e46","e47","e48","e49","e50")
+
     val tofuwokki = listOf("porkkana", "paprika", "kesäkurpitsa", "marinoitu tofu", "riisinuudeli")
     val kikhernetikkamasala = listOf(
         "paprika",
@@ -228,10 +233,11 @@ class MainActivity1 : AppCompatActivity() {
 
         val button22: Button = findViewById(R.id.button22)
         button22.setOnClickListener {
+            ruokalajit.addAll(taytelista)
             Intent(this, MainActivity5::class.java).also {
-                var t = 1
+                var q = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${t++}", value)
+                    it.putExtra("e${q++}", value)
                 }
                 startActivity(it)
             }
@@ -241,10 +247,11 @@ class MainActivity1 : AppCompatActivity() {
 
         val button23: Button = findViewById(R.id.button23)
         button23.setOnClickListener {
+            ruokalajit.addAll(taytelista)
             Intent(this, MainActivity2::class.java).also {
-                var j = 1
+                var w = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${j++}", value)
+                    it.putExtra("e${w++}", value)
                 }
                 startActivity(it)
             }
@@ -254,10 +261,11 @@ class MainActivity1 : AppCompatActivity() {
 
         val button24: Button = findViewById(R.id.button24)
         button24.setOnClickListener {
+            ruokalajit.addAll(taytelista)
             Intent(this, MainActivity3::class.java).also {
-                var t = 1
+                var e = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${t++}", value)
+                    it.putExtra("e${e++}", value)
                 }
                 startActivity(it)
             }
@@ -267,10 +275,11 @@ class MainActivity1 : AppCompatActivity() {
 
         val button25: Button = findViewById(R.id.button25)
         button25.setOnClickListener {
+            ruokalajit.addAll(taytelista)
             Intent(this, MainActivity4::class.java).also {
-                var t = 1
+                var r = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${t++}", value)
+                    it.putExtra("e${r++}", value)
                 }
                 startActivity(it)
             }
@@ -280,6 +289,7 @@ class MainActivity1 : AppCompatActivity() {
 
         val button26: Button = findViewById(R.id.button26)
         button26.setOnClickListener {
+            ruokalajit.addAll(taytelista)
             Intent(this, MainActivity5::class.java).also {
                 var t = 1
                 for (value in ruokalajit) {

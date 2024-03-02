@@ -19,21 +19,25 @@ class MainActivity4 : AppCompatActivity() {
 
         val hevit = listOf("tomaatti","kurkku","avokado","lime","kesäkurpitsa","paprika","chili",
             "inkivääri","kevätsipuli","babypinaatti","salaatti","banaani","porkkana","sipuli",
-            "valkosipuli","peruna","hedelmä")
+            "valkosipuli","peruna","hedelmä","suolakurkku")
         val kylmat = listOf("vegenakki","vegejuusto","maustamaton tofu","marinoitu tofu","tofu",
-            "alpro",
-            "margariini","kaurakerma","ranskankerma")
-        val kuivat0 = listOf("leipä")
+            "alpro", "margariini","kaurakerma","ranskankerma","hummus")
+        val kuivat0 = listOf("leipä","oreo","keksi","hampurilaissämpylä")
         val kuivat1 = listOf("tacopohja","tortillapohja","tacosalsa")
         val kuivat2 = listOf("tölkkilinssi","kikherne","mustapapu",
             "tomaattimurska","tomaattipyre","kookosmaito","ananas")
         val kuivat3 = listOf("kaurahiutale","riisi","linssi",
-            "riisinuudeli","pasta","rypsiöljy","oliiviöljy","vehnäjauho")
+            "riisinuudeli","pasta","rypsiöljy","oliiviöljy","vehnäjauho","majoneesi")
         val mausteet = listOf("chilijauhe","curry","garam masala","juustokumina","kasvisliemikuutio","korianteri",
             "kurkuma","mustapippuri","oregano","savupaprika","sipulijauhe","soijakastike",
-                        "suola","timjami","paprikamauste",
+            "suola","timjami","paprikamauste",
             "valkosipulijauhe")
-        val pakasteet = listOf("pakastepinaatti","smoothiesekoitus","puolukka","mustikka")
+        val pakasteet = listOf("pakastepinaatti","smoothiesekoitus","puolukka","mustikka","kalapuikko","kasvispihvi")
+        val hygienia = listOf("shampoo","vessapaperi","pyykinpesuaine","siteet","tampoonit","roskapussit")
+        val koodit = listOf("e1","e2","e3","e4","e5","e6","e7","e8","e9","e10","e11","e12",
+            "e13","e14","e15","e16","e17","e18","e19","e20","e21","e22","e23","e24","e25",
+            "e26","e27","e28","e29","e30","e31","e32","e33","e34","e35","e36","e37","e38",
+            "e39","e40","e41","e42","e43","e44","e45","e46","e47","e48","e49","e50")
 
         val mausteet2 = mutableListOf<String>()
         val kuivat02 = mutableListOf<String>()
@@ -43,16 +47,18 @@ class MainActivity4 : AppCompatActivity() {
         val pakasteet2 = mutableListOf<String>()
         val hevit2 = mutableListOf<String>()
         val kylmat2 = mutableListOf<String>()
+        val hygienia2 = mutableListOf<String>()
+        val koodit2 = mutableListOf<String>()
 
         val muut2 = mutableListOf<String>()
 
-        val ruokalajit = mutableListOf("e1","e2","e3","e4","e5","e6","e7","e8","e9","e10","e11","e12",
+        val ruokalajit = listOf("e1","e2","e3","e4","e5","e6","e7","e8","e9","e10","e11","e12",
             "e13","e14","e15","e16","e17","e18","e19","e20","e21","e22","e23","e24","e25",
             "e26","e27","e28","e29","e30","e31","e32","e33","e34","e35","e36","e37","e38",
             "e39","e40","e41","e42","e43","e44","e45","e46","e47","e48","e49","e50")
-        var s = 1
+
         for (value in ruokalajit){
-            val a = intent.getStringExtra("e${s++}")
+            val a = intent.getStringExtra("$value")
             val aa = "$a"
 
             when {
@@ -64,18 +70,20 @@ class MainActivity4 : AppCompatActivity() {
                 kuivat3.contains(aa) -> kuivat32.add(aa)
                 mausteet.contains(aa) -> mausteet2.add(aa)
                 pakasteet.contains(aa) -> pakasteet2.add(aa)
+                hygienia.contains(aa) -> hygienia2.add(aa)
+                koodit.contains(aa) -> koodit2.add(aa)
                 else -> muut2.add(aa)
             }
         }
 
         val aineet = hevit2 + kuivat02 + kylmat2  + kuivat12 + kuivat22 +
-                kuivat32 + mausteet2 + pakasteet2 + muut2
+                kuivat32 + mausteet2 + pakasteet2 + hygienia2 + muut2
 
         val list = arrayListOf<Model2>()
 
-        for (i in aineet) {
+        for (d in aineet) {
             val model = Model2(
-                "$i"
+                "$d"
             )
             list.add(model)
         }
