@@ -57,16 +57,6 @@ class MainActivity2 : AppCompatActivity() {
             }
         }
 
-        val syote = intent.getStringExtra("f")
-        val b = "$syote"
-        when {
-            hevit.contains(b) -> hevit2.add(b)
-            kylmat.contains(b) -> kylmat2.add(b)
-            kuivat.contains(b) -> kuivat2.add(b)
-            mausteet.contains(b) -> mausteet2.add(b)
-            pakasteet.contains(b) -> pakasteet2.add(b)
-            else -> muut2.add(b)}
-
         val arrayAdapter1: ArrayAdapter<*>
         val listview1: ListView = findViewById(R.id.lista1)
         arrayAdapter1 = ArrayAdapter(this, android.R.layout.simple_list_item_1, hevit2)

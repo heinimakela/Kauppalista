@@ -60,7 +60,6 @@ class MainActivity5 : AppCompatActivity() {
         for (value in ruokalajit){
             val a = intent.getStringExtra("$value")
             val aa = "$a"
-
             when {
                 hevit.contains(aa) -> hevit2.add(aa)
                 kuivat0.contains(aa) -> kuivat02.add(aa)
