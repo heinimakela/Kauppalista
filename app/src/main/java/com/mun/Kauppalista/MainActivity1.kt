@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import java.util.Locale
 
 class MainActivity1 : AppCompatActivity() {
 
@@ -225,8 +226,9 @@ class MainActivity1 : AppCompatActivity() {
         button21.setOnClickListener {
             val textbox1: EditText = findViewById(R.id.textbox1)
             val textbox12 = textbox1.text.toString()
-            ruokalajit.add(textbox12)
-            Toast.makeText(this, "$textbox12 lisätty", Toast.LENGTH_SHORT).show()
+            val textbox13 = textbox12.replaceFirstChar {it.lowercase()}
+            ruokalajit.add(textbox13)
+            Toast.makeText(this, "$textbox13 lisätty", Toast.LENGTH_SHORT).show()
         }
 
         //"Valmis" -nappi:
