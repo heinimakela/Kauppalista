@@ -300,5 +300,19 @@ class MainActivity1 : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        //Testi 4
+
+        val button27: Button = findViewById(R.id.button27)
+        button27.setOnClickListener {
+            ruokalajit.addAll(taytelista)
+            Intent(this, MainActivity6::class.java).also {
+                var t = 1
+                for (value in ruokalajit) {
+                    it.putExtra("e${t++}", value)
+                }
+                startActivity(it)
+            }
+        }
     }
 }
