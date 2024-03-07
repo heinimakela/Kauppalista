@@ -33,20 +33,23 @@ class Adapter4(private val context: Context,
         val data = list[position]
 
         val kategoria = data.category
-        val vari = varimuunnos(kategoria)
+        val vari= varimuunnos(kategoria)
         holder.button.setBackgroundColor(vari as Int)
 
         holder.titleTV.text = data.title
+
+        val vari2= varimuunnos2(kategoria)
+
         var click = true
         holder.button.setOnClickListener {
             when {
                 click == true -> {
-                    holder.button.setBackgroundColor(Color.rgb(185, 140, 244))
+                    holder.button.setBackgroundColor(vari2 as Int)
                     click = false
                 }
 
                 else -> {
-                    holder.button.setBackgroundColor(Color.rgb(88, 17, 185))
+                    holder.button.setBackgroundColor(vari as Int)
                     click = true
                 }
             }
@@ -57,10 +60,22 @@ class Adapter4(private val context: Context,
         return when (kategoria) {
             "hevi" -> Color.rgb(50, 205, 50)
             "kylmä" -> Color.rgb(100, 149, 237)
-            "pakaste" -> Color.rgb(0, 139, 139)
-            "kuiva" -> Color.rgb(0, 139, 139)
-            "muu" -> Color.rgb(255, 105, 180)
+            "pakaste" -> Color.rgb(0,190,190)
+            "kuiva" -> Color.rgb(225,36,233)
+            "muu" -> Color.rgb(135,70,255)
             "mauste" -> Color.rgb(218, 165, 32)
+            else -> "nothing"
+        }
+    }
+
+    private fun varimuunnos2(kategoria: String): Any {
+        return when (kategoria) {
+            "hevi" -> Color.rgb(200,225,150)
+            "kylmä" -> Color.rgb(192,192,255)
+            "pakaste" -> Color.rgb(225,255,225)
+            "kuiva" -> Color.rgb(250,190,200)
+            "muu" -> Color.rgb(225,180,255)
+            "mauste" -> Color.rgb(255,255,170)
             else -> "nothing"
         }
     }

@@ -282,7 +282,7 @@
             android:id="@+id/button27"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="Testi 4"
+            android:text="Testi 5"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/lpurple"/>
 
