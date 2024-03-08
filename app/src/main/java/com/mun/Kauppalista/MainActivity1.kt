@@ -301,12 +301,26 @@ class MainActivity1 : AppCompatActivity() {
             }
         }
 
-        //Testi 4
+        //Testi 5
 
         val button27: Button = findViewById(R.id.button27)
         button27.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity6::class.java).also {
+                var t = 1
+                for (value in ruokalajit) {
+                    it.putExtra("e${t++}", value)
+                }
+                startActivity(it)
+            }
+        }
+
+        //Testi 6
+
+        val button28: Button = findViewById(R.id.button28)
+        button28.setOnClickListener {
+            ruokalajit.addAll(taytelista)
+            Intent(this, MainActivity7::class.java).also {
                 var t = 1
                 for (value in ruokalajit) {
                     it.putExtra("e${t++}", value)

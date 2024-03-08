@@ -286,6 +286,14 @@
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/lpurple"/>
 
+        <Button
+            android:id="@+id/button28"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Testi 6"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/lpurple"/>
+
     </LinearLayout>
 
 </ScrollView>

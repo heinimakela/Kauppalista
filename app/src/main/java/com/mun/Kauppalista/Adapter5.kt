@@ -12,8 +12,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import kotlin.random.Random
 
-class Adapter4(private val context: Context,
-               private val list: ArrayList<Model3>) : RecyclerView.Adapter<Adapter4.ViewHolder>() {
+class Adapter5(private val context: Context,
+               private val list: ArrayList<Model3>) : RecyclerView.Adapter<Adapter5.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleTV: TextView = view.findViewById(R.id.button)
@@ -80,6 +80,3 @@ class Adapter4(private val context: Context,
         }
     }
 }
-
-
-
