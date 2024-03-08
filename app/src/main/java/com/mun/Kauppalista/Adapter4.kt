@@ -70,12 +70,12 @@ class Adapter4(private val context: Context,
 
     private fun varimuunnos2(kategoria: String): Any {
         return when (kategoria) {
-            "hevi" -> Color.rgb(200,225,150)
-            "kylmä" -> Color.rgb(192,192,255)
-            "pakaste" -> Color.rgb(225,255,225)
-            "kuiva" -> Color.rgb(250,190,200)
-            "muu" -> Color.rgb(225,180,255)
-            "mauste" -> Color.rgb(255,255,170)
+            "hevi" -> Color.rgb(216,245,216)
+            "kylmä" -> Color.rgb(219,231,251)
+            "pakaste" -> Color.rgb(230,255,225)
+            "kuiva" -> Color.rgb(251,226,252)
+            "muu" -> Color.rgb(233,221,255)
+            "mauste" -> Color.rgb(249,238,210)
             else -> "nothing"
         }
     }
