@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity7 : AppCompatActivity() {
+
+    val adapter = Adapter5 {model3 -> }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
@@ -13,7 +15,7 @@ class MainActivity7 : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = Adapter5(this, fetchList())
+        recyclerView.adapter = adapter
     }
     private fun fetchList(): ArrayList<Model3> {
 
@@ -105,3 +107,4 @@ class MainActivity7 : AppCompatActivity() {
         return list
     }
 }
+
