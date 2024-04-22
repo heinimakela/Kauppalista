@@ -15,6 +15,7 @@ import kotlin.random.Random
 class Adapter4(private val context: Context,
                private val list: ArrayList<Model3>) : RecyclerView.Adapter<Adapter4.ViewHolder>() {
 
+
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleTV: TextView = view.findViewById(R.id.button)
         val button: Button = view.findViewById(R.id.button)
@@ -29,7 +30,10 @@ class Adapter4(private val context: Context,
         return list.count()
     }
 
+
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         val data = list[position]
 
         val kategoria = data.category
@@ -54,6 +58,9 @@ class Adapter4(private val context: Context,
                 }
             }
         }
+        holder.setIsRecyclable(false)
+
+
     }
 
     private fun varimuunnos(kategoria: String): Any {
