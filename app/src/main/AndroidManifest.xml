@@ -32,6 +32,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity0"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
