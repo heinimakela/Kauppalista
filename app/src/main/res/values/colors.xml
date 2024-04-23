@@ -5,4 +5,8 @@
     <color name="purple">#5811B9</color>
     <color name="lpurple">#B98CF4</color>
     <color name="androidpurple">#674fa3</color>
+    <color name="androiddarkpurple">#4F3D7C</color>
+    <color name="androidpurplelittlelighter">#755FB1</color>
+    <color name="androidpurplelittlelighter2">#7E69B6</color>
+    <color name="androidpurplelittledarker">#5F4998</color>
 </resources>

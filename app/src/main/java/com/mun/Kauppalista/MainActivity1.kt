@@ -479,87 +479,86 @@ class MainActivity1 : AppCompatActivity() {
 
         //Testi 1
 
-        val button23: Button = findViewById(R.id.button23)
-        button23.setOnClickListener {
-            ruokalajit.addAll(taytelista)
-            Intent(this, MainActivity2::class.java).also {
-                var we = 1
-                for (value in ruokalajit) {
-                    it.putExtra("e${we++}", value)
-                }
-                startActivity(it)
-            }
-        }
+        //val button23: Button = findViewById(R.id.button23)
+        //button23.setOnClickListener {
+        //    ruokalajit.addAll(taytelista)
+        //    Intent(this, MainActivity2::class.java).also {
+        //        var we = 1
+        //        for (value in ruokalajit) {
+        //            it.putExtra("e${we++}", value)
+        //        }
+        //        startActivity(it)
+        //    }
+        //}
 
         //Testi 2
 
-        val button24: Button = findViewById(R.id.button24)
-        button24.setOnClickListener {
-            ruokalajit.addAll(taytelista)
-            Intent(this, MainActivity3::class.java).also {
-                var ee = 1
-                for (value in ruokalajit) {
-                    it.putExtra("e${ee++}", value)
-                }
-                startActivity(it)
-            }
-        }
+        //val button24: Button = findViewById(R.id.button24)
+        //button24.setOnClickListener {
+        //    ruokalajit.addAll(taytelista)
+        //    Intent(this, MainActivity3::class.java).also {
+        //        var ee = 1
+        //        for (value in ruokalajit) {
+        //            it.putExtra("e${ee++}", value)
+        //        }
+        //        startActivity(it)
+        //    }
+        //}
 
         //Testi 3
 
-        val button25: Button = findViewById(R.id.button25)
-        button25.setOnClickListener {
-            ruokalajit.addAll(taytelista)
-            Intent(this, MainActivity4::class.java).also {
-                var re = 1
-                for (value in ruokalajit) {
-                    it.putExtra("e${re++}", value)
-                }
-                startActivity(it)
-            }
-        }
+        //val button25: Button = findViewById(R.id.button25)
+        //button25.setOnClickListener {
+        //    ruokalajit.addAll(taytelista)
+        //    Intent(this, MainActivity4::class.java).also {
+        //        var re = 1
+        //        for (value in ruokalajit) {
+        //            it.putExtra("e${re++}", value)
+        //        }
+        //        startActivity(it)
+        //    }
+        //}
 
         //Testi 4
 
-        val button26: Button = findViewById(R.id.button26)
-        button26.setOnClickListener {
-            ruokalajit.addAll(taytelista)
-            Intent(this, MainActivity5::class.java).also {
-                var te = 1
-                for (value in ruokalajit) {
-                    it.putExtra("e${te++}", value)
-                }
-                startActivity(it)
-            }
-        }
+        //val button26: Button = findViewById(R.id.button26)
+        //button26.setOnClickListener {
+        //    ruokalajit.addAll(taytelista)
+        //    Intent(this, MainActivity5::class.java).also {
+        //        var te = 1
+        //        for (value in ruokalajit) {
+        //            it.putExtra("e${te++}", value)
+        //        }
+        //        startActivity(it)
+        //   }
+        //}
 
         //Testi 5
 
-        val button27: Button = findViewById(R.id.button27)
-        button27.setOnClickListener {
-            ruokalajit.addAll(taytelista)
-            Intent(this, MainActivity6::class.java).also {
-                var te = 1
-                for (value in ruokalajit) {
-                    it.putExtra("e${te++}", value)
-                }
-                startActivity(it)
-            }
-        }
+        //val button27: Button = findViewById(R.id.button27)
+        //button27.setOnClickListener {
+        //    ruokalajit.addAll(taytelista)
+        //    Intent(this, MainActivity6::class.java).also {
+        //        var te = 1
+        //        for (value in ruokalajit) {
+        //            it.putExtra("e${te++}", value)
+        //        }
+        //        startActivity(it)
+        //    }
+        //}
 
         //Testi 6
 
-        val button28: Button = findViewById(R.id.button28)
-        button28.setOnClickListener {
-            ruokalajit.addAll(taytelista)
-            Intent(this, MainActivity7::class.java).also {
-                var te = 1
-                for (value in ruokalajit) {
-                    it.putExtra("e${te++}", value)
-                }
-                startActivity(it)
-            }
-        }
+        //val button28: Button = findViewById(R.id.button28)
+        //button28.setOnClickListener {
+        //    ruokalajit.addAll(taytelista)
+        //    Intent(this, MainActivity7::class.java).also {
+        //        for (value in ruokalajit) {
+        //            it.putExtra("e${te++}", value)
+        //        }
+        //        startActivity(it)
+        //    }
+        //}
     }
 }
 
