@@ -20,18 +20,12 @@
         tools:viewBindingIgnore="true" >
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kauppalista"
-            android:layout_gravity="center_horizontal"
-            android:textSize="35sp"/>
-
-        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valitse reseptit:"
+        android:text="Valitse tuotteita ja reseptejä"
+            android:textColor="@color/androidpurple"
         android:layout_gravity="center_horizontal"
-        android:textSize="20sp"/>
+        android:textSize="23sp"/>
 
         <Button
             android:id="@+id/button1"
@@ -39,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Tofuwokki"
-            android:backgroundTint="@color/purple"/>
+            android:backgroundTint="@color/androidpurple"/>
 
 
         <Button
@@ -48,7 +42,7 @@
             android:layout_height="wrap_content"
             android:text="Linssicurry"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:backgroundTint="@color/androidpurple"/>
 
 
         <Button
@@ -57,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="Palak paneer"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:backgroundTint="@color/androidpurple"/>
 
 
         <Button
@@ -66,7 +60,7 @@
             android:layout_height="wrap_content"
             android:text="Kikherne tikka masala"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:backgroundTint="@color/androidpurple"/>
 
 
         <Button
@@ -74,8 +68,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Nakkikastike perunalla"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal"/>
 
 
         <Button
@@ -83,8 +76,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Mustapapupyörykät pastalla"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
 
         <Button
@@ -92,8 +84,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Vegepyttipannu"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
 
         <Button
@@ -101,8 +92,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Quesadillat"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal"/>
 
 
         <Button
@@ -110,8 +100,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Linssitacot"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
 
         <Button
@@ -119,8 +108,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Tofutortillat"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
 
         <Button
@@ -128,93 +116,85 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Kaurahiutaleet"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button12"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Smoothiehedelmät"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button13"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Alpro"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button14"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Puolukka"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button15"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Leipä"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button16"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Hummus"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button17"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Pähkinä"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button18"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Vessapaperi"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:id="@+id/button19"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Pyykinpesuaine"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
         <Button
             android:id="@+id/button20"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Shampoo"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:layout_gravity="center_horizontal" />
 
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lisää kauppalistaan omavalintainen kohta:"
+        android:text="Lisää omavalintainen kohta:"
+            android:textColor="@color/androidpurple"
         android:layout_gravity="center_horizontal"
-        android:textSize="17sp"/>
+        android:textSize="23sp"/>
 
         <EditText
         android:id="@+id/textbox1"
         android:layout_width="165dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:hint="Kirjoita tähän" />
+        android:hint="Kirjoita tähän"
+            android:textColorHint="@color/androidpurple"/>
 
         <Button
             android:id="@+id/button21"
@@ -222,20 +202,22 @@
             android:layout_height="wrap_content"
             android:text="Syötä"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple"/>
+            android:backgroundTint="@color/androidpurple"/>
 
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Klikkaa lopuksi:"
+            android:textColor="@color/androidpurple"
         android:layout_gravity="center_horizontal"
-        android:textSize="35sp"/>
+        android:textSize="23sp"/>
 
         <Button
             android:id="@+id/button22"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_width="275dp"
+            android:layout_height="100dp"
             android:text="Valmis"
+            android:textSize="20dp"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/purple"/>
 
@@ -243,8 +225,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Testiversioita:"
+            android:textColor="@color/androidpurple"
             android:layout_gravity="center_horizontal"
-            android:textSize="20sp"/>
+            android:textSize="23sp"/>
 
         <Button
             android:id="@+id/button23"

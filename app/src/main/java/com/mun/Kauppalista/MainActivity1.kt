@@ -1,5 +1,6 @@
 package com.mun.Kauppalista
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -130,114 +131,334 @@ class MainActivity1 : AppCompatActivity() {
         setContentView(R.layout.activity_main1)
 
         val button1: Button = findViewById(R.id.button1)
+        var a = true
         button1.setOnClickListener {
-            ruokalajit.addAll(tofuwokki)
-            Toast.makeText(this, "Tofuwokki valittu", Toast.LENGTH_SHORT).show()
+            when {
+                a == true -> {
+                    button1.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(tofuwokki)
+                    a = false
+                }
+                else -> {
+                    button1.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(tofuwokki)
+                    a = true
+                }
+            }
         }
         val button2: Button = findViewById(R.id.button2)
+        var b = true
         button2.setOnClickListener {
-            ruokalajit.addAll(linssicurry)
-            Toast.makeText(this, "Linssicurry valittu", Toast.LENGTH_SHORT).show()
+            when {
+                b == true -> {
+                    button2.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(linssicurry)
+                    b = false
+                }
+                else -> {
+                    button2.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(linssicurry)
+                    b = true
+                }
+            }
         }
         val button3: Button = findViewById(R.id.button3)
+        var c = true
         button3.setOnClickListener {
-            ruokalajit.addAll(palakpaneer)
-            Toast.makeText(this, "Palak paneer valittu", Toast.LENGTH_SHORT).show()
+            when {
+                c == true -> {
+                    button3.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(palakpaneer)
+                    c = false
+                }
+                else -> {
+                    button3.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(palakpaneer)
+                    c = true
+                }
+            }
         }
         val button4: Button = findViewById(R.id.button4)
+        var d = true
         button4.setOnClickListener {
-            ruokalajit.addAll(kikhernetikkamasala)
-            Toast.makeText(this, "Kikherne tikka masala valittu", Toast.LENGTH_SHORT).show()
+            when {
+                d == true -> {
+                    button4.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(kikhernetikkamasala)
+                    d = false
+                }
+                else -> {
+                    button4.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(kikhernetikkamasala)
+                    d = true
+                }
+            }
         }
         val button5: Button = findViewById(R.id.button5)
+        var e = true
         button5.setOnClickListener {
-            ruokalajit.addAll(nakkikastikejaperuna)
-            Toast.makeText(this, "Nakkikastike ja peruna valittu", Toast.LENGTH_SHORT).show()
+            when {
+                e == true -> {
+                    button5.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(nakkikastikejaperuna)
+                    e = false
+                }
+                else -> {
+                    button5.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(nakkikastikejaperuna)
+                    e = true
+                }
+            }
         }
         val button6: Button = findViewById(R.id.button6)
+        var f = true
         button6.setOnClickListener {
-            ruokalajit.addAll(mustapapupyörykätjapasta)
-            Toast.makeText(this, "Mustapapupyörykät ja pasta valittu", Toast.LENGTH_SHORT).show()
+            when {
+                f == true -> {
+                    button6.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(mustapapupyörykätjapasta)
+                    f = false
+                }
+                else -> {
+                    button6.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(mustapapupyörykätjapasta)
+                    f = true
+                }
+            }
         }
         val button7: Button = findViewById(R.id.button7)
+        var g = true
         button7.setOnClickListener {
-            ruokalajit.addAll(vegepyttipannu)
-            Toast.makeText(this, "Vegepyttipannu valittu", Toast.LENGTH_SHORT).show()
+            when {
+                g == true -> {
+                    button7.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(vegepyttipannu)
+                    g = false
+                }
+                else -> {
+                    button7.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(vegepyttipannu)
+                    g = true
+                }
+            }
         }
         val button8: Button = findViewById(R.id.button8)
+        var h = true
         button8.setOnClickListener {
-            ruokalajit.addAll(quesadillat)
-            Toast.makeText(this, "Quesadillat valittu", Toast.LENGTH_SHORT).show()
+            when {
+                h == true -> {
+                    button8.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(quesadillat)
+                    h = false
+                }
+                else -> {
+                    button8.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(quesadillat)
+                    h = true
+                }
+            }
         }
         val button9: Button = findViewById(R.id.button9)
+        var i = true
         button9.setOnClickListener {
-            ruokalajit.addAll(tacot)
-            Toast.makeText(this, "Linssitacot valittu", Toast.LENGTH_SHORT).show()
+            when {
+                i == true -> {
+                    button9.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(tacot)
+                    i = false
+                }
+                else -> {
+                    button9.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(tacot)
+                    i = true
+                }
+            }
         }
         val button10: Button = findViewById(R.id.button10)
+        var j = true
         button10.setOnClickListener {
-            ruokalajit.addAll(tortillat)
-            Toast.makeText(this, "Tofutortillat valittu", Toast.LENGTH_SHORT).show()
+            when {
+                j == true -> {
+                    button10.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.addAll(tortillat)
+                    j = false
+                }
+                else -> {
+                    button10.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.removeAll(tortillat)
+                    j = true
+                }
+            }
         }
         val button11: Button = findViewById(R.id.button11)
+        var k = true
         button11.setOnClickListener {
-            ruokalajit.add("kaurahiutale")
-            Toast.makeText(this, "Kaurahiutale valittu", Toast.LENGTH_SHORT).show()
+            when {
+                k == true -> {
+                    button11.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("kaurahiutale")
+                    k = false
+                }
+                else -> {
+                    button11.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("kaurahiutale")
+                    k = true
+                }
+            }
         }
         val button12: Button = findViewById(R.id.button12)
+            var l =true
         button12.setOnClickListener {
-            ruokalajit.add("smoothiehedelmät")
-            Toast.makeText(this, "Smoothiehedelmät valittu", Toast.LENGTH_SHORT).show()
+            when {
+                l == true -> {
+                    button12.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("smoothiehedelmät")
+                    l = false
+                }
+                else -> {
+                    button12.setBackgroundColor(Color.rgb(103,79,163))
+                    ruokalajit.remove("smoothiehedelmät")
+                    l = true
+                }
+            }
         }
         val button13: Button = findViewById(R.id.button13)
+            var m = true
         button13.setOnClickListener {
-            ruokalajit.add("alpro")
-            Toast.makeText(this, "Alpro valittu", Toast.LENGTH_SHORT).show()
+            when {
+                m == true -> {
+                    button13.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("alpro")
+                    m = false
+                }
+                else -> {
+                    button13.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("alpro")
+                    m = true
+                }
+            }
         }
         val button14: Button = findViewById(R.id.button14)
+            var n = true
         button14.setOnClickListener {
-            ruokalajit.add("puolukka")
-            Toast.makeText(this, "Puolukkka valittu", Toast.LENGTH_SHORT).show()
+            when {
+                n == true -> {
+                    button14.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("puolukka")
+                    n = false
+                }
+                else -> {
+                    button14.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("puolukka")
+                    n = true
+                }
+            }
         }
         val button15: Button = findViewById(R.id.button15)
+            var o = true
         button15.setOnClickListener {
-            ruokalajit.add("leipä")
-            Toast.makeText(this, "Leipä valittu", Toast.LENGTH_SHORT).show()
+            when {
+                o == true -> {
+                    button15.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("leipä")
+                    o = false
+                }
+                else -> {
+                    button15.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("leipä")
+                    o = true
+                }
+            }
         }
         val button16: Button = findViewById(R.id.button16)
+            var p = true
         button16.setOnClickListener {
-            ruokalajit.add("hummus")
-            Toast.makeText(this, "Hummus valittu", Toast.LENGTH_SHORT).show()
+            when {
+                p == true -> {
+                    button16.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("hummus")
+                    p = false
+                }
+                else -> {
+                    button16.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("hummus")
+                    p = true
+                }
+            }
         }
         val button17: Button = findViewById(R.id.button17)
+            var q = true
         button17.setOnClickListener {
-            ruokalajit.add("pähkinä")
-            Toast.makeText(this, "Pähkinä valittu", Toast.LENGTH_SHORT).show()
+            when {
+                q == true -> {
+                    button17.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("pähkinä")
+                    q = false
+                }
+                else -> {
+                    button17.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("pähkinä")
+                    q = true
+                }
+            }
         }
         val button18: Button = findViewById(R.id.button18)
+            var r = true
         button18.setOnClickListener {
-            ruokalajit.add("vessapaperi")
-            Toast.makeText(this, "Vessapaperi valittu", Toast.LENGTH_SHORT).show()
+            when {
+                r == true -> {
+                    button18.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("vessapaperi")
+                    r = false
+                }
+                else -> {
+                    button18.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("vessapaperi")
+                    r = true
+                }
+            }
         }
-
         val button19: Button = findViewById(R.id.button19)
-        button19.setOnClickListener {
-            ruokalajit.add("pyykinpesuaine")
-            Toast.makeText(this, "Pyykinpesuaine valittu", Toast.LENGTH_SHORT).show()
-        }
+            var s = true
+            button19.setOnClickListener {
+                when {
+                    s == true -> {
+                        button19.setBackgroundColor(Color.rgb(224, 219, 238))
+                        ruokalajit.add("pyykinpesuaine")
+                        s = false
+                    }
+                    else -> {
+                        button19.setBackgroundColor(Color.rgb(103, 79, 163))
+                        ruokalajit.remove("pyykinpesuaine")
+                        s = true
+                    }
+                }
+            }
         val button20: Button = findViewById(R.id.button20)
+        var t = true
         button20.setOnClickListener {
-            ruokalajit.add("shampoo")
-            Toast.makeText(this, "Shampoo valittu", Toast.LENGTH_SHORT).show()
+            //ruokalajit.add("shampoo")
+            //Toast.makeText(this, "Shampoo valittu", Toast.LENGTH_SHORT).show()
+            when {
+                t == true -> {
+                    button20.setBackgroundColor(Color.rgb(224, 219, 238))
+                    ruokalajit.add("shampoo")
+                    t = false
+                }
+                else -> {
+                    button20.setBackgroundColor(Color.rgb(103, 79, 163))
+                    ruokalajit.remove("shampoo")
+                    t = true
+                }
+            }
         }
 
         //"Syötä" -nappi:
-
         val button21: Button = findViewById(R.id.button21)
         button21.setOnClickListener {
             val textbox1: EditText = findViewById(R.id.textbox1)
             val textbox12 = textbox1.text.toString()
-            val textbox13 = textbox12.replaceFirstChar {it.lowercase()}
+            val textbox13 = textbox12.replaceFirstChar { it.lowercase() }
             ruokalajit.add(textbox13)
             Toast.makeText(this, "$textbox13 lisätty", Toast.LENGTH_SHORT).show()
         }
@@ -248,9 +469,9 @@ class MainActivity1 : AppCompatActivity() {
         button22.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity7::class.java).also {
-                var q = 1
+                var qe = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${q++}", value)
+                    it.putExtra("e${qe++}", value)
                 }
                 startActivity(it)
             }
@@ -262,9 +483,9 @@ class MainActivity1 : AppCompatActivity() {
         button23.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity2::class.java).also {
-                var w = 1
+                var we = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${w++}", value)
+                    it.putExtra("e${we++}", value)
                 }
                 startActivity(it)
             }
@@ -276,9 +497,9 @@ class MainActivity1 : AppCompatActivity() {
         button24.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity3::class.java).also {
-                var e = 1
+                var ee = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${e++}", value)
+                    it.putExtra("e${ee++}", value)
                 }
                 startActivity(it)
             }
@@ -290,9 +511,9 @@ class MainActivity1 : AppCompatActivity() {
         button25.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity4::class.java).also {
-                var r = 1
+                var re = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${r++}", value)
+                    it.putExtra("e${re++}", value)
                 }
                 startActivity(it)
             }
@@ -304,9 +525,9 @@ class MainActivity1 : AppCompatActivity() {
         button26.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity5::class.java).also {
-                var t = 1
+                var te = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${t++}", value)
+                    it.putExtra("e${te++}", value)
                 }
                 startActivity(it)
             }
@@ -318,9 +539,9 @@ class MainActivity1 : AppCompatActivity() {
         button27.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity6::class.java).also {
-                var t = 1
+                var te = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${t++}", value)
+                    it.putExtra("e${te++}", value)
                 }
                 startActivity(it)
             }
@@ -332,12 +553,13 @@ class MainActivity1 : AppCompatActivity() {
         button28.setOnClickListener {
             ruokalajit.addAll(taytelista)
             Intent(this, MainActivity7::class.java).also {
-                var t = 1
+                var te = 1
                 for (value in ruokalajit) {
-                    it.putExtra("e${t++}", value)
+                    it.putExtra("e${te++}", value)
                 }
                 startActivity(it)
             }
         }
     }
 }
+
