@@ -3,7 +3,6 @@ package com.mun.Kauppalista
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,7 +14,11 @@ class MainActivity9 : AppCompatActivity() {
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = Adapter5(this, otsikko)
+        recyclerView.adapter = Adapter6(this, fetchList())
+
+    }
+
+    private fun fetchList(): ArrayList<Model4> {
 
         val otsikko = mutableListOf<String>()
 
@@ -25,7 +28,15 @@ class MainActivity9 : AppCompatActivity() {
             val textbox12 = textbox1.text.toString()
             val textbox13 = textbox12.replaceFirstChar { it.lowercase() }
             otsikko.add(textbox13)
-            Toast.makeText(this, "$textbox13 lisätty", Toast.LENGTH_SHORT).show()
         }
+
+        val list = arrayListOf<Model4>()
+
+        for (k in otsikko) {
+            val model = Model4(
+                "$k")
+            list.add(model)
+        }
+        return list
     }
 }

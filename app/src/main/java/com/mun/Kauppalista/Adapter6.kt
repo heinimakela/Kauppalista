@@ -6,14 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import kotlin.random.Random
 
 class Adapter6(private val context: Context,
-               private val list: ArrayList<Model3>) : RecyclerView.Adapter<Adapter6.ViewHolder>() {
+               private val list: ArrayList<Model4>
+) : RecyclerView.Adapter<Adapter6.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val titleTV: TextView = view.findViewById(R.id.button)
@@ -33,5 +31,11 @@ class Adapter6(private val context: Context,
         val data = list[position]
         holder.button.setBackgroundColor(Color.rgb(38, 39, 70))
         holder.titleTV.text = data.title
+    }
+
+    fun updateAll(arrayList: ArrayList<Model4>) {
+        list.clear()
+        list.addAll(arrayList)
+        notifyDataSetChanged()
     }
 }
